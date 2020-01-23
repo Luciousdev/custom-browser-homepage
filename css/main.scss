@@ -2,7 +2,7 @@
 
 // COLORS
 $color-text: #eee;
-$color-background: #2c2c2c;
+$color-background: #1c1c1c;
 $color-border: #888;
 // FOCUSED
 $focused-border: 1px solid #fff;
@@ -21,16 +21,15 @@ $calendar-today: #ddd;
 //
 // IMPORT FONTS //
 @font-face {
-    font-family: "Lato";
+    font-family: 'Lato';
     src: url('fonts/LatoLatin-Regular.woff');
 }
 
 @font-face {
-    font-family: "Lato";
+    font-family: 'Lato';
     src: url('fonts/LatoLatin-Bold.woff');
     font-weight: 700;
 }
-
 
 /* CODE */
 
@@ -55,7 +54,7 @@ body {
 }
 
 .search {
-    margin: 50px auto 0;
+    margin: 20px auto;
     max-width: 700px;
     position: relative;
     width: 100%;
@@ -96,11 +95,11 @@ body {
     font-size: 18px;
 }
 
-.search-box:focus+.search-clear {
+.search-box:focus + .search-clear {
     color: $color-text;
 }
 
-input[type="text"] {
+input[type='text'] {
     background-color: $color-background;
     border: 1px solid $color-border;
     height: 40px;
@@ -110,7 +109,7 @@ input[type="text"] {
     transition: 0.2s linear;
 }
 
-input[type="text"]:focus {
+input[type='text']:focus {
     border: $focused-border;
     box-shadow: $focused-box-shadow;
 }
@@ -121,7 +120,7 @@ input[type="text"]:focus {
     max-width: 100%;
     display: block;
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-top: 70px;
     cursor: pointer;
 }
 
@@ -140,7 +139,6 @@ input[type="text"]:focus {
 .modal {
     background-color: $color-background;
     border: 1px solid $color-border;
-    ;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -158,7 +156,6 @@ input[type="text"]:focus {
     width: 500px;
     height: auto;
     border: 1px solid $color-border;
-    ;
     background-color: $color-background;
     position: fixed;
     top: 50px;
@@ -238,23 +235,19 @@ input[type="text"]:focus {
     flex-flow: row;
 }
 
-.cal-week:nth-child(-n+1) .day {
+.cal-week:nth-child(-n + 1) .day {
     border-top: 1px solid $color-border;
-    ;
 }
 
 .cal-week .day:nth-last-child(1) {
     border-right: 1px solid $color-border;
-    ;
 }
 
 .day {
     width: 50px;
     height: 50px;
     border-bottom: 1px solid $color-border;
-    ;
     border-left: 1px solid $color-border;
-    ;
     line-height: 50px;
     text-align: center;
     font-size: 18px;
@@ -267,13 +260,11 @@ input[type="text"]:focus {
 
 .day.prev-month {
     color: $color-border;
-    ;
     cursor: pointer;
 }
 
 .day.next-month {
     color: $color-border;
-    ;
     cursor: pointer;
 }
 
@@ -324,7 +315,6 @@ h1:after {
 .links a {
     padding: 5px 0 5px 30px;
     color: $color-border;
-    ;
     text-decoration: none;
     display: block;
     text-overflow: ellipsis;
@@ -410,7 +400,6 @@ a:focus {
     width: 100px;
     border-bottom: 1px solid transparent;
     color: $color-border;
-    ;
     display: inline-block;
     text-align: center;
     line-height: 40px;
@@ -423,7 +412,6 @@ a:focus {
 .slide-button:hover,
 .notes-launcher:hover {
     border-color: $color-border;
-    ;
 }
 
 .btn-active {
@@ -451,7 +439,6 @@ a:focus {
     visibility: visible;
     height: 100%;
 }
-
 
 /* X - Close modal button */
 
@@ -482,7 +469,6 @@ a:focus {
     padding: 10px;
     background-color: $color-background;
     border: 1px solid $color-border;
-    ;
     color: #fff;
     height: 250px;
     transition: 0.2s linear;
@@ -498,7 +484,6 @@ a:focus {
     width: 100px;
 }
 
-
 /* error message under input box */
 
 .input-error {
@@ -512,7 +497,7 @@ a:focus {
     flex-flow: column;
 }
 
-.notes-todo-list .row:nth-child(-n+1) {
+.notes-todo-list .row:nth-child(-n + 1) {
     border-top: 1px solid $color-border;
 }
 
@@ -521,7 +506,7 @@ a:focus {
     padding: 10px 0;
 }
 
-.notes-todo-list input[type="checkbox"] {
+.notes-todo-list input[type='checkbox'] {
     margin-right: 10px;
     align-self: center; // vertically center checkbox
 }
@@ -533,7 +518,7 @@ a:focus {
     flex-grow: 1;
 }
 
-.strikethrough:checked+label {
+.strikethrough:checked + label {
     text-decoration: line-through;
 }
 
@@ -554,9 +539,7 @@ a:focus {
 
 .button {
     color: $color-border;
-    ;
     border: 1px solid $color-border;
-    ;
     background: $color-background;
     padding: 0 20px;
     height: 40px;
@@ -615,7 +598,6 @@ a:focus {
     opacity: 1;
 }
 
-
 /* CONFIGURATOR */
 
 .configurator .row {
@@ -629,7 +611,6 @@ a:focus {
     min-width: 200px;
 }
 
-
 /*
 .options label {
   float: left;
@@ -637,7 +618,6 @@ a:focus {
   text-align: center;
 }
 */
-
 
 /* radio buttons */
 
@@ -665,7 +645,7 @@ a:focus {
     color: #fff;
 }
 
-.radio input[type=radio] {
+.radio input[type='radio'] {
     visibility: hidden;
     position: absolute;
 }
@@ -682,7 +662,6 @@ a:focus {
     width: 20px;
     height: 20px;
     border: 2px solid $color-border;
-    ;
     border-radius: 100%;
     transition: all 0.25s linear;
 }
@@ -690,7 +669,7 @@ a:focus {
 .radio .check::before {
     display: block;
     position: absolute;
-    content: "";
+    content: '';
     border-radius: 100%;
     height: 10px;
     width: 10px;
@@ -699,18 +678,17 @@ a:focus {
     transition: all 0.25s linear;
 }
 
-.radio input[type=radio]:checked~.check {
+.radio input[type='radio']:checked ~ .check {
     border: 2px solid #fff;
 }
 
-.radio input[type=radio]:checked~.check::before {
+.radio input[type='radio']:checked ~ .check::before {
     background: #fff;
 }
 
-input[type=radio]:checked~label {
+input[type='radio']:checked ~ label {
     color: #fff;
 }
-
 
 /* end of radio buttons */
 
@@ -751,9 +729,7 @@ input[type=radio]:checked~label {
     color: $color-background;
 }
 
-
 /* styled radio buttons */
-
 
 /* Media screens */
 
@@ -766,13 +742,12 @@ input[type=radio]:checked~label {
     }
 }
 
-
 /*Switch*/
 
 .switch-container {
     display: flex;
     align-items: center;
-}
+} 
 
 .switch-container p {
     padding: 0 5px;
@@ -810,20 +785,20 @@ input[type=radio]:checked~label {
     height: 100%;
     background-color: #f9f9f9;
     border: 2px solid $color-background;
-    transition: 0.4s cubic-bezier(.22, .61, .36, 1);
+    transition: 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
     border-radius: 35px;
 }
 
 .switch-button:before,
 .switch-button-tiny:before {
     position: absolute;
-    content: "";
+    content: '';
     height: 17px;
     width: 17px;
     top: 3px;
     left: 4px;
     background-color: $color-background;
-    transition: 0.4s cubic-bezier(.22, .61, .36, 1);
+    transition: 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
     border-radius: 100%;
 }
 
@@ -834,25 +809,23 @@ input[type=radio]:checked~label {
     left: 4px;
 }
 
-.switch:checked+.switch-button,
-.switch-tiny:checked+.switch-button-tiny {
+.switch:checked + .switch-button,
+.switch-tiny:checked + .switch-button-tiny {
     background-color: $color-background;
     border-color: #f9f9f9;
 }
 
-.switch:checked+.switch-button:before {
+.switch:checked + .switch-button:before {
     background-color: #f9f9f9;
     transform: translateX(31px);
 }
 
-.switch-tiny:checked+.switch-button-tiny:before {
+.switch-tiny:checked + .switch-button-tiny:before {
     background-color: #f9f9f9;
     transform: translateX(32px);
 }
 
-
 /* END OF CONFIGURATOR */
-
 
 /* UTILITIES */
 
@@ -899,7 +872,6 @@ input[type=radio]:checked~label {
     width: 40px;
     text-align: center;
     color: $color-border;
-    ;
     font-weight: 400;
     transition: $transition-fast;
     cursor: pointer;
