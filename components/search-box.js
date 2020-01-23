@@ -1,6 +1,6 @@
 // SEARCH BOX - contains code (logic) for search box on the front page
 
-var ENGINE = "google"; // google or ddg
+var ENGINE = "ddg"; // google or ddg
 var search_box = document.getElementsByClassName('search-box')[0];
 var search_parent = search_box.parentNode;
 
@@ -28,9 +28,8 @@ search_box.onkeypress = function(e) {
 // shortcuts to common websites
 var queries = {
     "!y": "https://www.youtube.com/results?search_query=",
-    "!e": "https://www.ebay.com/",
-    "!wa": "https://www.wolframalpha.com/",
-    "!books": "http://bookzz.org/s/?q=",
+    "!g": "https://www.github.com/",
+    "!p": "https://www.protonmail.com/",
 };
 
 

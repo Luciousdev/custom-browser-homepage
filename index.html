@@ -3,17 +3,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main_min.css">
-    <title> Welcome back Master </title>
+    <link rel="stylesheet" href="css/main.css">
+    <title>&lrm;</title>
 </head>
 
 
 <body>
     <div class="container">
-        <div class="search">
-            <input class="search-box" type="textbox" placeholder="Welcome back Master" autofocus>
-            <div class="search-clear">×</div>
-        </div>
+      
 
         <div class="clock">
             <div class="time">00:00</div>
@@ -74,12 +71,15 @@
         </div>
         <div class="overlay"></div>
     </div>
-
+    <div class="search">
+        <input class="search-box" type="textbox" placeholder="" autofocus>
+        <div class="search-clear">×</div>
+    </div>
     <div class="outer-slides-container">
         <div class="buttons-container"></div>
 
 
-        <div class="arrow left-arrow">
+        <!-- <div class="arrow left-arrow">
             <svg id="svg2" height="50px" width="50px" viewBox="0 0 50 50">
                 <g id="layer1" transform="translate(-132.69 -56.215)">
                     <path id="path4152" style="stroke-linejoin:round;stroke-width:3;color:#fff;stroke:#fff;stroke-linecap:round;fill:none" d="m160.47 93.613-13.278-12.941 13.246-12.941"
@@ -95,54 +95,49 @@
                     />
                 </g>
             </svg>
-        </div>
+        </div> -->
 
 
         <div class="slides-container">
 
-            <div class="slide" name="First Slide">
+            <div class="slide" name="Links">
                 <div class="part">
-                    <h1> Group 1 </h1>
-
+                    <h1> Daily </h1>
                     <div class="links">
-                        <a href='#'> Link 1 </a>
-                        <a href='#'> Link 2 </a>
-                        <a href='#'> Link 3 </a>
-                        <a href='#'> Link 4 </a>
-                        <a href='#'> Link 5 </a>
-                        <a href='#'> Link 6 </a>
+                        <a href='https://mail.protonmail.com/' target="_blank"> Proton </a>
+                        <a href='https://github.com/' target="_blank"> GitHub </a>
+                        <a href='https://www.reddit.com' target="_blank"> Reddit </a>
+                        <a href='https://www.gmail.com/' target="_blank"> Gmail </a>
+                    </div>
+                </div>
+                <div class="part">
+                    <h1> Work </h1>
+                    <div class="links">
+                        <a href='https://bitbucket.org/' target="_blank"> BitBucket </a>
+                        <a href='https://taiga.spalmalo.com/' target="_blank"> Taiga </a>
+                        <a href='https://glitch.com/' target="_blank"> Glitch </a>
+                    </div>
+                </div>
+                <div class="part">
+                    <h1> Media </h1>
+                    <div class="links">
+                        <a href='https://www.youtube.com/' target="_blank"> YouTube </a>
+                        <a href='https://drive.google.com/drive/my-drive' target="_blank"> Gdrive </a>
+                    </div>
+                </div>
+                <div class="part">
+                    <h1> Education </h1>
+                    <div class="links">
+                        <a href='https://learn.javascript.ru/' target="_blank"> EcmaScript </a>
+                        <a href='https://learn.javascript.ru/' target="_blank"> PMS </a>
+                        <a href='http://com.iaau.edu.kg/calendar/schedule-of-lectures.html' target="_blank"> Schedule </a>
                     </div>
                 </div>
 
-                <div class="part">
-                    <h1> Group 2 </h1>
-
-                    <div class="links">
-                        <a href='#'> Link 1 </a>
-                        <a href='#'> Link 2 </a>
-                        <a href='#'> Link 3 </a>
-                        <a href='#'> Link 4 </a>
-                        <a href='#'> Link 5 </a>
-                        <a href='#'> Link 6 </a>
-                    </div>
-                </div>
-
-                <div class="part">
-                    <h1> Group 3 </h1>
-
-                    <div class="links">
-                        <a href='#'> Link 1 </a>
-                        <a href='#'> Link 2 </a>
-                        <a href='#'> Link 3 </a>
-                        <a href='#'> Link 4 </a>
-                        <a href='#'> Link 5 </a>
-                        <a href='#'> Link 6 </a>
-                    </div>
-                </div>
             </div>
 
 
-            <div class="slide" name="Second Slide">
+            <!-- <div class="slide" name="Second Slide">
                 <div class="part">
                     <h1> Group x </h1>
 
@@ -222,7 +217,7 @@
                         <a href='#'> Link 6 </a>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
 
 
@@ -324,11 +319,12 @@
             showClock();
 
             // display countdown in calendar
+            // Message when your countdown ends
             countDown({
                 "y": 2017,
                 "m": 7,
                 "d": 1
-            }, "Message when your countdown ends");
+            }, "");
         </script>
 
 </body>
