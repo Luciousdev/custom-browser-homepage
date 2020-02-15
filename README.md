@@ -1,7 +1,7 @@
 # Browser homepage
 
 Custom browser homepage, for replacing default browser homepage/startpage. It should work on any modern browser, just set `index.html` as your homepage and add your own links
-to the index.html (see Adding links for more informations)
+to the index.html (see Adding links for more informations) 
 
 I had lots of unsorted links laying around and the current bookmarks extensions
 are just horrible mess, so I developed my own idea. Hopefully someone will find this project useful.
