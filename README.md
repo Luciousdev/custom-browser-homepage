@@ -6,7 +6,7 @@ to the index.html (see Adding links for more informations)
 I had lots of unsorted links laying around and the current bookmarks extensions
 are just horrible mess, so I developed my own idea. Hopefully someone will find this project useful.
 
-# [Live Example](https://greatdanton.github.com/browser-homepage)
+# [Live Example](https://luciousdev.github.io/custom-browser-homepage/)
 
 # Features
 
