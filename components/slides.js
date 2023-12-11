@@ -1,4 +1,3 @@
-
 // SLIDES:
 
 // declared variables
@@ -26,7 +25,7 @@ buttonsContainer.innerHTML = Html;
 
 
 // on button click, toggle active class, and slide to correct slide
-document.querySelector('.buttons-container').addEventListener('click', function (e) {
+document.querySelector('.buttons-container').addEventListener('click', function(e) {
     var target = e.target;
     // if clicked element is button (with class .slide-button), slide to correct
     // slide
@@ -81,7 +80,7 @@ function slideMoveRight() {
 }
 
 // right arrow click
-rightArrow.onclick = function () {
+rightArrow.onclick = function() {
     slideMoveRight();
 };
 
@@ -103,20 +102,19 @@ function slideMoveLeft() {
 }
 
 // left arrow click
-leftArrow.onclick = function () {
+leftArrow.onclick = function() {
     slideMoveLeft();
 };
 
 
 // move slides left/right when search box is not in focus
 var search = document.getElementsByClassName('search')[0];
-document.addEventListener('keypress', function (e) {
+document.addEventListener('keypress', function(e) {
     // if search box is not focused
     if (!search.classList.contains('search-active')) {
         if (e.key === "ArrowRight") {
             slideMoveRight();
-        }
-        else if (e.key === "ArrowLeft") {
+        } else if (e.key === "ArrowLeft") {
             slideMoveLeft();
         }
     }

@@ -2,3 +2,5 @@ prepros-6.config
 homepage.html
 .vscode
 build
+config.json
+node_modules/

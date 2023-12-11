@@ -31,6 +31,7 @@ $calendar-today: #ddd;
     font-weight: 700;
 }
 
+
 /* CODE */
 
 * {
@@ -95,7 +96,7 @@ body {
     font-size: 18px;
 }
 
-.search-box:focus + .search-clear {
+.search-box:focus+.search-clear {
     color: $color-text;
 }
 
@@ -235,7 +236,7 @@ input[type='text']:focus {
     flex-flow: row;
 }
 
-.cal-week:nth-child(-n + 1) .day {
+.cal-week:nth-child(-n+1) .day {
     border-top: 1px solid $color-border;
 }
 
@@ -440,6 +441,7 @@ a:focus {
     height: 100%;
 }
 
+
 /* X - Close modal button */
 
 .close-modal {
@@ -484,6 +486,7 @@ a:focus {
     width: 100px;
 }
 
+
 /* error message under input box */
 
 .input-error {
@@ -497,7 +500,7 @@ a:focus {
     flex-flow: column;
 }
 
-.notes-todo-list .row:nth-child(-n + 1) {
+.notes-todo-list .row:nth-child(-n+1) {
     border-top: 1px solid $color-border;
 }
 
@@ -518,7 +521,7 @@ a:focus {
     flex-grow: 1;
 }
 
-.strikethrough:checked + label {
+.strikethrough:checked+label {
     text-decoration: line-through;
 }
 
@@ -598,6 +601,7 @@ a:focus {
     opacity: 1;
 }
 
+
 /* CONFIGURATOR */
 
 .configurator .row {
@@ -611,6 +615,7 @@ a:focus {
     min-width: 200px;
 }
 
+
 /*
 .options label {
   float: left;
@@ -618,6 +623,7 @@ a:focus {
   text-align: center;
 }
 */
+
 
 /* radio buttons */
 
@@ -678,17 +684,18 @@ a:focus {
     transition: all 0.25s linear;
 }
 
-.radio input[type='radio']:checked ~ .check {
+.radio input[type='radio']:checked~.check {
     border: 2px solid #fff;
 }
 
-.radio input[type='radio']:checked ~ .check::before {
+.radio input[type='radio']:checked~.check::before {
     background: #fff;
 }
 
-input[type='radio']:checked ~ label {
+input[type='radio']:checked~label {
     color: #fff;
 }
+
 
 /* end of radio buttons */
 
@@ -729,7 +736,9 @@ input[type='radio']:checked ~ label {
     color: $color-background;
 }
 
+
 /* styled radio buttons */
+
 
 /* Media screens */
 
@@ -742,12 +751,13 @@ input[type='radio']:checked ~ label {
     }
 }
 
+
 /*Switch*/
 
 .switch-container {
     display: flex;
     align-items: center;
-} 
+}
 
 .switch-container p {
     padding: 0 5px;
@@ -809,23 +819,25 @@ input[type='radio']:checked ~ label {
     left: 4px;
 }
 
-.switch:checked + .switch-button,
-.switch-tiny:checked + .switch-button-tiny {
+.switch:checked+.switch-button,
+.switch-tiny:checked+.switch-button-tiny {
     background-color: $color-background;
     border-color: #f9f9f9;
 }
 
-.switch:checked + .switch-button:before {
+.switch:checked+.switch-button:before {
     background-color: #f9f9f9;
     transform: translateX(31px);
 }
 
-.switch-tiny:checked + .switch-button-tiny:before {
+.switch-tiny:checked+.switch-button-tiny:before {
     background-color: #f9f9f9;
     transform: translateX(32px);
 }
 
+
 /* END OF CONFIGURATOR */
+
 
 /* UTILITIES */
 

@@ -1,0 +1,12 @@
+// This is the file where you will store your API keys and other sensitive information
+// Here you'll also set other settings and variables, some things are required and some others are optional.
+// You can find more information about the settings and variables in the README.md file
+//
+// Please rename this file to "config.json" or the program will not work
+
+{
+    // API KEY for OpenWeatherMap and other veriables
+    "apiKey": "xxxxxxxxxxxxxxxxxxxxx",
+    "lat": "xx.xxxxxx",
+    "lon": "xx.xxxxxx",
+}
