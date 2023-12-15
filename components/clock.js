@@ -4,7 +4,7 @@
 var clock = document.getElementsByClassName('clock')[0];
 
 // show calendar on clock click
-clock.addEventListener('click', function (e) {
+clock.addEventListener('click', function(e) {
     var target = e.target;
     calendar.classList.add('visible');
     overlay.classList.add('visible');
@@ -43,7 +43,7 @@ function showToday() {
     var day_name = today.getDay();
     var day = today.getDate();
     var month = today.getMonth();
-    var date = clock.getElementsByClassName('date')[0];
+    var date = clock.getElementsByClassName('currentDate')[0];
 
     if (day == 1) {
         day = day + 'st';

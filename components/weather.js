@@ -13,6 +13,7 @@ $.getJSON('../config.json', function(config) {
         const weatherCondition = data.weather[0].main.toLowerCase();
         console.log(data['weather'][0]);
 
+        setTemperature(data.main.temp);
         // Update background based on weather condition
         updateBackground(weatherCondition);
     });
@@ -41,4 +42,10 @@ function fetchImage(keyword) {
     return fetch(unsplashUrl)
         .then(response => response.json())
         .then(data => data.urls.full);
+}
+
+function setTemperature(temp) {
+    const temperature = Math.round(temp - 273.15);
+    const temperatureElement = $('.currentTemperature');
+    temperatureElement.text(` | ${temperature}°C`);
 }

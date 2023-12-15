@@ -28,9 +28,13 @@ search_box.onkeypress = function(e) {
 // shortcuts to common websites
 var queries = {
     "!y": "https://www.youtube.com/results?search_query=",
+};
+
+var queries_without_search = {
+    "!y": "https://www.youtube.com/",
     "!g": "https://www.github.com/",
     "!p": "https://www.protonmail.com/",
-};
+}
 
 
 var searchEngines = {
@@ -50,18 +54,21 @@ function checkBangs(query) {
     withoutSearch = ["!e", "!wa"]; // websites without search option
 
     if (queries.hasOwnProperty(bangPart)) {
-        // ebay got fucked up search query, wtf ...
-        if (withoutSearch.indexOf(bangPart) == -1) {
+        // Check if there is a search term after the bang
+        if (query_arr.length > 1 && withoutSearch.indexOf(bangPart) == -1) {
             query = createQuery(query_arr.slice(1).join(' '));
             window.location = queries[bangPart] + query;
         } else {
-            window.location = queries[bangPart];
+            window.location = queries_without_search[bangPart];
         }
+    } else if (queries_without_search.hasOwnProperty(bangPart)) {
+        window.location = queries_without_search[bangPart];
     } else {
         query = createQuery(query);
         window.location = search_engine + query;
     }
 }
+
 
 // encoding url (so searching for c++ will actually search for c++ and not for c)
 function createQuery(query) {
