@@ -4,9 +4,14 @@
 //
 // Please rename this file to "config.json" or the program will not work
 
+// !!!!!
+// WARN REMOVE THE COMMENTS BEFORE USING THE FILE OR THE PROGRAM WILL NOT WORK
+// !!!!!
+
 {
     // API KEY for OpenWeatherMap and other veriables
     "apiKey": "xxxxxxxxxxxxxxxxxxxxx",
     "lat": "xx.xxxxxx",
     "lon": "xx.xxxxxx",
+    "unsplashAccessKey": "xxxxxxxxxxxxxxxxxxxxxx"
 }
